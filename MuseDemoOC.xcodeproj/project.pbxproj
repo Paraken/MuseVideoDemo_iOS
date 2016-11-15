@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8111DA621DD466110013F9EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111DA611DD466110013F9EF /* main.m */; };
+		8111DA651DD466110013F9EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111DA641DD466110013F9EF /* AppDelegate.m */; };
+		8111DA6B1DD466110013F9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8111DA691DD466110013F9EF /* Main.storyboard */; };
+		8111DA6D1DD466110013F9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8111DA6C1DD466110013F9EF /* Assets.xcassets */; };
+		8111DA701DD466110013F9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8111DA6E1DD466110013F9EF /* LaunchScreen.storyboard */; };
+		8111DA801DD4669D0013F9EF /* ImportTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111DA791DD4669D0013F9EF /* ImportTableViewController.m */; };
+		8111DA811DD4669D0013F9EF /* LiteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111DA7B1DD4669D0013F9EF /* LiteTableViewController.m */; };
+		8111DA821DD4669D0013F9EF /* MediaInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111DA7D1DD4669D0013F9EF /* MediaInfoTableViewController.m */; };
+		8111DA831DD4669D0013F9EF /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111DA7F1DD4669D0013F9EF /* ZFModalTransitionAnimator.m */; };
+		8111DA871DD466B50013F9EF /* Music.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8111DA851DD466B50013F9EF /* Music.bundle */; };
+		8111DA881DD466B50013F9EF /* Textures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8111DA861DD466B50013F9EF /* Textures.bundle */; };
+		8111DA8B1DD466C40013F9EF /* MuseVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8111DA8A1DD466C40013F9EF /* MuseVideo.framework */; };
+		8111DA8D1DD466CA0013F9EF /* MuseVideo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8111DA8A1DD466C40013F9EF /* MuseVideo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8111DA8E1DD466CA0013F9EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8111DA8D1DD466CA0013F9EF /* MuseVideo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8111DA5D1DD466110013F9EF /* MuseDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8111DA611DD466110013F9EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8111DA631DD466110013F9EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8111DA641DD466110013F9EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8111DA6A1DD466110013F9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8111DA6C1DD466110013F9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8111DA6F1DD466110013F9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8111DA711DD466110013F9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8111DA781DD4669D0013F9EF /* ImportTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportTableViewController.h; sourceTree = "<group>"; };
+		8111DA791DD4669D0013F9EF /* ImportTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportTableViewController.m; sourceTree = "<group>"; };
+		8111DA7A1DD4669D0013F9EF /* LiteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiteTableViewController.h; sourceTree = "<group>"; };
+		8111DA7B1DD4669D0013F9EF /* LiteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiteTableViewController.m; sourceTree = "<group>"; };
+		8111DA7C1DD4669D0013F9EF /* MediaInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfoTableViewController.h; sourceTree = "<group>"; };
+		8111DA7D1DD4669D0013F9EF /* MediaInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInfoTableViewController.m; sourceTree = "<group>"; };
+		8111DA7E1DD4669D0013F9EF /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
+		8111DA7F1DD4669D0013F9EF /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
+		8111DA851DD466B50013F9EF /* Music.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Music.bundle; sourceTree = SOURCE_ROOT; };
+		8111DA861DD466B50013F9EF /* Textures.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Textures.bundle; sourceTree = SOURCE_ROOT; };
+		8111DA8A1DD466C40013F9EF /* MuseVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MuseVideo.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8111DA5A1DD466110013F9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8111DA8B1DD466C40013F9EF /* MuseVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8111DA541DD466110013F9EF = {
+			isa = PBXGroup;
+			children = (
+				8111DA891DD466B90013F9EF /* Frameworks */,
+				8111DA5F1DD466110013F9EF /* MuseDemoOC */,
+				8111DA5E1DD466110013F9EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8111DA5E1DD466110013F9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8111DA5D1DD466110013F9EF /* MuseDemoOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8111DA5F1DD466110013F9EF /* MuseDemoOC */ = {
+			isa = PBXGroup;
+			children = (
+				8111DA841DD466A00013F9EF /* Resources */,
+				8111DA771DD4669D0013F9EF /* Classes */,
+				8111DA601DD466110013F9EF /* Supporting Files */,
+			);
+			path = MuseDemoOC;
+			sourceTree = "<group>";
+		};
+		8111DA601DD466110013F9EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8111DA611DD466110013F9EF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8111DA771DD4669D0013F9EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8111DA781DD4669D0013F9EF /* ImportTableViewController.h */,
+				8111DA791DD4669D0013F9EF /* ImportTableViewController.m */,
+				8111DA7A1DD4669D0013F9EF /* LiteTableViewController.h */,
+				8111DA7B1DD4669D0013F9EF /* LiteTableViewController.m */,
+				8111DA7C1DD4669D0013F9EF /* MediaInfoTableViewController.h */,
+				8111DA7D1DD4669D0013F9EF /* MediaInfoTableViewController.m */,
+				8111DA7E1DD4669D0013F9EF /* ZFModalTransitionAnimator.h */,
+				8111DA7F1DD4669D0013F9EF /* ZFModalTransitionAnimator.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8111DA841DD466A00013F9EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8111DA851DD466B50013F9EF /* Music.bundle */,
+				8111DA861DD466B50013F9EF /* Textures.bundle */,
+				8111DA631DD466110013F9EF /* AppDelegate.h */,
+				8111DA641DD466110013F9EF /* AppDelegate.m */,
+				8111DA691DD466110013F9EF /* Main.storyboard */,
+				8111DA6C1DD466110013F9EF /* Assets.xcassets */,
+				8111DA6E1DD466110013F9EF /* LaunchScreen.storyboard */,
+				8111DA711DD466110013F9EF /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8111DA891DD466B90013F9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8111DA8A1DD466C40013F9EF /* MuseVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8111DA5C1DD466110013F9EF /* MuseDemoOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8111DA741DD466110013F9EF /* Build configuration list for PBXNativeTarget "MuseDemoOC" */;
+			buildPhases = (
+				8111DA591DD466110013F9EF /* Sources */,
+				8111DA5A1DD466110013F9EF /* Frameworks */,
+				8111DA5B1DD466110013F9EF /* Resources */,
+				8111DA8E1DD466CA0013F9EF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuseDemoOC;
+			productName = MuseDemoOC;
+			productReference = 8111DA5D1DD466110013F9EF /* MuseDemoOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8111DA551DD466110013F9EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Paraken;
+				TargetAttributes = {
+					8111DA5C1DD466110013F9EF = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8111DA581DD466110013F9EF /* Build configuration list for PBXProject "MuseDemoOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8111DA541DD466110013F9EF;
+			productRefGroup = 8111DA5E1DD466110013F9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8111DA5C1DD466110013F9EF /* MuseDemoOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8111DA5B1DD466110013F9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8111DA701DD466110013F9EF /* LaunchScreen.storyboard in Resources */,
+				8111DA871DD466B50013F9EF /* Music.bundle in Resources */,
+				8111DA6D1DD466110013F9EF /* Assets.xcassets in Resources */,
+				8111DA6B1DD466110013F9EF /* Main.storyboard in Resources */,
+				8111DA881DD466B50013F9EF /* Textures.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8111DA591DD466110013F9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8111DA801DD4669D0013F9EF /* ImportTableViewController.m in Sources */,
+				8111DA821DD4669D0013F9EF /* MediaInfoTableViewController.m in Sources */,
+				8111DA811DD4669D0013F9EF /* LiteTableViewController.m in Sources */,
+				8111DA651DD466110013F9EF /* AppDelegate.m in Sources */,
+				8111DA621DD466110013F9EF /* main.m in Sources */,
+				8111DA831DD4669D0013F9EF /* ZFModalTransitionAnimator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8111DA691DD466110013F9EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8111DA6A1DD466110013F9EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8111DA6E1DD466110013F9EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8111DA6F1DD466110013F9EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8111DA721DD466110013F9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8111DA731DD466110013F9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8111DA751DD466110013F9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MuseDemoOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Paraken.MuseVideoDemoObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8111DA761DD466110013F9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MuseDemoOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Paraken.MuseVideoDemoObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8111DA581DD466110013F9EF /* Build configuration list for PBXProject "MuseDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8111DA721DD466110013F9EF /* Debug */,
+				8111DA731DD466110013F9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8111DA741DD466110013F9EF /* Build configuration list for PBXNativeTarget "MuseDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8111DA751DD466110013F9EF /* Debug */,
+				8111DA761DD466110013F9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8111DA551DD466110013F9EF /* Project object */;
+}

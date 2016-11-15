@@ -1,0 +1,6 @@
+framework module MuseVideo {
+  umbrella header "MuseVideo.h"
+
+  export *
+  module * { export * }
+}
