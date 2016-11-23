@@ -312,7 +312,7 @@
                                         <rect key="frame" x="0.0" y="596" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r1d-sx-dqX" id="E82-gr-ivd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水印图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVa-hq-3k6">
@@ -369,7 +369,7 @@
                                         <rect key="frame" x="0.0" y="740" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bbx-eP-GVr" id="yN1-q0-qvv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V7-Kb-spm">
@@ -418,7 +418,7 @@
                                         <rect key="frame" x="0.0" y="828" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pcc-7e-QM2" id="i6s-db-w02">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="3" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="P69-Jc-b74">
@@ -463,7 +463,7 @@
                                         <rect key="frame" x="0.0" y="916" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mxc-xr-JpC" id="I3t-hA-1CS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="15" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="zPm-2O-pLc">
@@ -488,7 +488,7 @@
                                         <rect key="frame" x="0.0" y="1016" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2mC-9i-qke" id="4IB-xU-AxQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFo-QT-Vgn">
@@ -537,7 +537,7 @@
                                         <rect key="frame" x="0.0" y="1104" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oaM-Dj-26U" id="jjK-MP-KHD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="3" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="UqT-nv-JrK">
@@ -582,7 +582,7 @@
                                         <rect key="frame" x="0.0" y="1192" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yJM-EB-7nc" id="ddX-Xe-TaB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="15" maxValue="180" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-C1-Q9i">
@@ -640,7 +640,7 @@
             </objects>
             <point key="canvasLocation" x="2036" y="-177"/>
         </scene>
-        <!--MuseObjectiveCDemo-->
+        <!--MuseVideo-->
         <scene sceneID="2RD-G8-aCh">
             <objects>
                 <viewController id="qpX-uf-VYe" sceneMemberID="viewController">
@@ -675,7 +675,7 @@
                             <constraint firstItem="sNa-FQ-LDr" firstAttribute="centerX" secondItem="qhI-Av-IoA" secondAttribute="centerX" id="k8V-ER-4BB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MuseObjectiveCDemo" id="Gvc-Ez-Cpu"/>
+                    <navigationItem key="navigationItem" title="MuseVideo" id="Gvc-Ez-Cpu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TBc-yO-VLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

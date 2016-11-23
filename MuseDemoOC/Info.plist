@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
+	<key>CFBundleDisplayName</key>
+	<string>MuseVideo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -21,13 +23,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppleMusicUsageDescription</key>
-	<string></string>
+	<string>需要打开访问媒体库权限才能添加音乐</string>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>需要打开相机权限才能录像</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string></string>
+	<string>需要打开麦克风权限才能录像</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string></string>
+	<string>需要打开访问照片权限才能导入</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
