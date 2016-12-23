@@ -7,6 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MuseVideo/MuseVideo.h>
+
+@interface CameraUICustomization : MuseVideoCameraUICustomization
+
+@end
+
+@interface CameraUICustomization16x9 : MuseVideoCameraUICustomization16x9
+
+@end
+
+@interface VideoEditorUICustomization : MuseVideoEditorUICustomization
+
+@end
+
+@interface VideoMusicPickerUICustomization : MuseVideoMusicPickerUICustomization
+
+@end
 
 @interface LiteTableViewController : UITableViewController
 

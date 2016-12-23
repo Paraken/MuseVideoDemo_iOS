@@ -28,24 +28,37 @@
 + (void)registerAppWithKey:(NSString *)appKey appcode:(NSString *)appcode secret:(NSString *)secret temporaryDirectory:(NSURL *)url;
 
 /**
- * @brief 创建一个 UINavigationController, 其 rootViewController 为相机 ViewController.
+ * @brief 创建一个 UINavigationController, 其 rootViewController 为相机 ViewController 用于拍摄视频.
  * @param config 当前所创建 CameraViewController 的配置，为空则使用 MuseVideoCameraConfig 默认参数.
- * @param customization MuseVideo 界面自定 ui, 为空则使用 MuseVideoCameraUIConstant 默认参数
+ * @param customization MuseVideo 界面自定 ui, 为空则使用 MuseVideoUICustomization 默认参数
  * @param delegate MuseVideoDelegate.
  * @return 返回sdk所创建的 UINavigationController.
  */
-+ (UINavigationController *)createCameraViewControllerWithConfig:(MuseVideoCameraConfig *)config
-                                                   customization:(MuseVideoUICustomization *)customization
-                                                        delegate:(id<MuseVideoDelegate>)delegate;
++ (UINavigationController *)createCaptureVideoViewControllerWithConfig:(MuseVideoCameraConfig *)config
+                                                         customization:(MuseVideoUICustomization *)customization
+                                                              delegate:(id<MuseVideoDelegate>)delegate;
+
+/**
+ * @brief 创建一个 UINavigationController, 其 rootViewController 为相机 ViewController 用于拍摄照片.
+ * @param config 当前所创建 CameraViewController 的配置，为空则使用 MuseVideoPhotoConfig 默认参数.
+ * @param customization MuseVideo 界面自定 ui, 为空则使用 MuseVideoUICustomization(16x9) 默认参数
+ * @param delegate MuseVideoDelegate.
+ * @return 返回sdk所创建的 UINavigationController.
+ */
++ (UINavigationController *)createTakingPhotoViewControllerWithConfig:(MuseVideoPhotoConfig *)config
+                                                        customization:(MuseVideoUICustomization *)customization
+                                                             delegate:(id<MuseVideoDelegate>)delegate;
 
 
 /**
  * @brief 创建一个 UINavigationController, 其 rootViewController 为导入 ViewController.
  * @param config 当前所创建 ImportViewController 的配置，为空则使用 MuseVideoEditorConfig 默认参数.
+ * @param customization MuseVideo 界面自定 ui, 为空则使用 MuseVideoUICustomization 默认参数
  * @param delegate MuseVideoDelegate.
  * @return 返回sdk所创建的 UINavigationController.
  */
 + (UINavigationController *)createImportViewControllerWithConfig:(MuseVideoEditorConfig *)config
+                                                   customization:(MuseVideoUICustomization *)customization
                                                         delegate:(id<MuseVideoDelegate>)delegate;
 
 /**

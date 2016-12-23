@@ -9,6 +9,7 @@
 #import "ImportTableViewController.h"
 #import <MuseVideo/MuseVideo.h>
 #import "MediaInfoTableViewController.h"
+#import "LiteTableViewController.h"
 
 @interface ImportTableViewController () <MuseVideoDelegate>
 @property (nonatomic)   NSURL                       *videoPathURL;
@@ -16,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *minSecondsLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *maxSecondsLabel;
+
+@property (weak, nonatomic) IBOutlet UISwitch *editorUICustomizationSwitch;
 
 @end
 
@@ -29,7 +32,14 @@
     MuseVideoEditorConfig *config = [[MuseVideoEditorConfig alloc] init];
     config.minSeconds = self.minSecondsLabel.tag;
     config.maxSeconds = self.maxSecondsLabel.tag;
-    UINavigationController *vc = [MuseVideo createImportViewControllerWithConfig:config delegate:self];
+
+    MuseVideoUICustomization *customization = nil;
+    if (self.editorUICustomizationSwitch.isOn) {
+        customization = [[MuseVideoUICustomization alloc] init];
+        customization.editor = [[VideoEditorUICustomization alloc] init];
+        customization.musicPicker = [[VideoMusicPickerUICustomization alloc] init];
+    }
+    UINavigationController *vc = [MuseVideo createImportViewControllerWithConfig:config customization:customization delegate:self];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -52,6 +62,10 @@
     [vc dismissViewControllerAnimated:YES completion:^{
         [self performSegueWithIdentifier:@"ImportToMediaInfoSegueIdentifier" sender:nil];
     }];
+}
+
+- (void)museVC:(UINavigationController *)vc captureImage:(UIImage *)image {
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

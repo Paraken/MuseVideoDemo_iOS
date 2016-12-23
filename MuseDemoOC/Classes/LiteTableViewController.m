@@ -10,6 +10,301 @@
 #import <MuseVideo/MuseVideo.h>
 #import "MediaInfoTableViewController.h"
 #import "ZFModalTransitionAnimator.h"
+#import "PhotoInfoViewController.h"
+
+@implementation CameraUICustomization16x9
+
+- (UIColor *)navigationBarTintColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)navigationBarTitleColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)lightThemeColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)themeColor {
+    return [UIColor colorWithRed:0x42/255.0 green:0x85/255.0 blue:0xf4/255.0 alpha:1];
+}
+
+- (UIColor *)viewBackgroundColor {
+    return [UIColor whiteColor];
+}
+
+//- (UIImage *)closeIcon {
+//    return [[UIImage imageNamed:@"MuseCloseIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//}
+
+- (UIImage *)muteOnIcon {
+    return [UIImage imageNamed:@"MuseMuteOnIcon"];
+}
+
+//- (UIImage *)muteOffIcon {
+//    return [UIImage imageNamed:@"MuseMuteOffIcon"];
+//}
+
+- (UIImage *)beautifyOnIcon {
+    return [UIImage imageNamed:@"MuseBeautifyOnIcon"];
+}
+
+//- (UIImage *)beautifyOffIcon {
+//    return [UIImage imageNamed:@"MuseBeautifyOffIcon"];
+//}
+
+- (UIImage *)stabilizationOnIcon {
+    return [UIImage imageNamed:@"MuseStabilizationOnIcon"];
+}
+
+//- (UIImage *)stabilizationOffIcon {
+//    return [UIImage imageNamed:@"MuseStabilizationOffIcon"];
+//}
+
+//- (UIImage *)switchCameraIcon {
+//    return [UIImage imageNamed:@"MuseSwitchCameraIcon"];
+//}
+
+- (UIImage *)torchOnIcon {
+    return [UIImage imageNamed:@"MuseTorchOnIcon"];
+}
+
+//- (UIImage *)torchOffIcon {
+//    return [UIImage imageNamed:@"MuseTorchOffIcon"];
+//}
+
+- (UIImage *)countDownOnIcon {
+    return [UIImage imageNamed:@"MuseCountDownOnIcon"];
+}
+
+//- (UIImage *)countDownOffIcon {
+//    return [UIImage imageNamed:@"MuseCountDownOffIcon"];
+//}
+
+- (UIImage *)recordBeginIcon {
+    return [UIImage imageNamed:@"MuseRecordBeginIcon"];
+}
+
+- (UIImage *)recordSelectedIcon {
+    return [UIImage imageNamed:@"MuseRecordSeletedIcon"];
+}
+
+- (UIImage *)recordPauseIcon {
+    return [UIImage imageNamed:@"MuseRecordPauseRecordIcon"];
+}
+
+@end
+
+@implementation CameraUICustomization
+
+- (UIColor *)navigationBarTintColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)navigationBarTitleColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)lightThemeColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)themeColor {
+    return [UIColor colorWithRed:0x42/255.0 green:0x85/255.0 blue:0xf4/255.0 alpha:1];
+}
+
+- (UIColor *)viewBackgroundColor {
+    return [UIColor whiteColor];
+}
+
+- (UIImage *)closeIcon {
+    return [[UIImage imageNamed:@"MuseCloseIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
+- (UIImage *)muteOnIcon {
+    return [UIImage imageNamed:@"MuseMuteOnIcon"];
+}
+
+- (UIImage *)muteOffIcon {
+    return [UIImage imageNamed:@"MuseMuteOffIcon"];
+}
+
+- (UIImage *)beautifyOnIcon {
+    return [UIImage imageNamed:@"MuseBeautifyOnIcon"];
+}
+
+- (UIImage *)beautifyOffIcon {
+    return [UIImage imageNamed:@"MuseBeautifyOffIcon"];
+}
+
+- (UIImage *)stabilizationOnIcon {
+    return [UIImage imageNamed:@"MuseStabilizationOnIcon"];
+}
+
+- (UIImage *)stabilizationOffIcon {
+    return [UIImage imageNamed:@"MuseStabilizationOffIcon"];
+}
+
+- (UIImage *)switchCameraIcon {
+    return [UIImage imageNamed:@"MuseSwitchCameraIcon"];
+}
+
+- (UIImage *)torchOnIcon {
+    return [UIImage imageNamed:@"MuseTorchOnIcon"];
+}
+
+- (UIImage *)torchOffIcon {
+    return [UIImage imageNamed:@"MuseTorchOffIcon"];
+}
+
+- (UIImage *)countDownOnIcon {
+    return [UIImage imageNamed:@"MuseCountDownOnIcon"];
+}
+
+- (UIImage *)countDownOffIcon {
+    return [UIImage imageNamed:@"MuseCountDownOffIcon"];
+}
+
+- (UIImage *)recordBeginIcon {
+    return [UIImage imageNamed:@"MuseRecordBeginIcon"];
+}
+
+- (UIImage *)recordSelectedIcon {
+    return [UIImage imageNamed:@"MuseRecordSeletedIcon"];
+}
+
+- (UIImage *)recordPauseIcon {
+    return [UIImage imageNamed:@"MuseRecordPauseRecordIcon"];
+}
+
+- (UIImage *)recordDoneIcon {
+    return [UIImage imageNamed:@"MuseRecordDoneIcon"];
+}
+
+- (UIImage *)recordDoneDisableIcon {
+    return [UIImage imageNamed:@"MuseRecordDoneGrayIcon"];
+}
+
+- (UIImage *)importIcon {
+    return [UIImage imageNamed:@"MuseGalaryIcon"];
+}
+
+- (UIImage *)willDeleteIcon {
+    return [UIImage imageNamed:@"MuseRecordWillDeleteIcon"];
+}
+
+- (UIImage *)willDeleteDisableIcon {
+    return [UIImage imageNamed:@"MuseRecordWillDeleteGrayIcon"];
+}
+
+- (UIImage *)confirmDeleteIcon {
+    return [UIImage imageNamed:@"MuseRecordConfirmDeleteIcon"];
+}
+
+@end
+
+@implementation VideoEditorUICustomization
+
+- (UIColor *)playerBackgroundColor {
+    return [UIColor colorWithRed:0xec/255.0 green:0xf2/255.0 blue:0xfd/255.0 alpha:1];
+}
+
+- (UIColor *)navigationBarTintColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)navigationBarTitleColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)lightThemeColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)themeColor {
+    return [UIColor colorWithRed:0x42/255.0 green:0x85/255.0 blue:0xf4/255.0 alpha:1];
+}
+
+- (UIColor *)viewBackgroundColor {
+    return [UIColor whiteColor];
+}
+
+- (UIImage *)voiceIcon {
+    return [UIImage imageNamed:@"MuseVoiceIcon"];
+}
+
+- (UIImage *)musicIcon {
+    return [UIImage imageNamed:@"MuseMusicIcon"];
+}
+
+- (UIImage *)musicAddBackgroundIcon {
+    return [UIImage imageNamed:@"MuseAddMusicBackground"];
+}
+
+- (UIImage *)musicStatusIcon {
+    return [UIImage imageNamed:@"MuseAddMusicIcon"];
+}
+
+- (UIImage *)musicDeleteIcon {
+    return [UIImage imageNamed:@"MuseCloseIcon"];
+}
+
+- (UIImage *)playIcon {
+    return [UIImage imageNamed:@"MusePlayIcon"];
+}
+
+- (UIColor *)musicAddButtonTitleColor {
+    return [UIColor whiteColor];
+}
+
+- (UIColor *)startTimeColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)endTimeColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)voiceSliderMaximumTrackTintColor {
+    return [UIColor colorWithRed:0x42/255.0 green:0x85/255.0 blue:0xf4/255.0 alpha:0.5];
+
+}
+
+@end
+
+
+@implementation VideoMusicPickerUICustomization
+
+- (UIColor *)viewBackgroundColor {
+    return [UIColor whiteColor];
+}
+
+- (UIColor *)navigationBarTintColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)navigationBarTitleColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)musicPickerSegmentedBackgroundColor {
+    return [UIColor colorWithRed:0x42/255.0 green:0x85/255.0 blue:0xf4/255.0 alpha:0.3];
+}
+
+- (UIColor *)musicPickerTitleNormalColor {
+    return [UIColor colorWithRed:0x66/255.0 green:0x80/255.0 blue:0xa9/255.0 alpha:1];
+}
+
+- (UIColor *)musicPickerTitleSelectedColor {
+    return [UIColor colorWithRed:0x42/255.0 green:0x85/255.0 blue:0xf4/255.0 alpha:1];
+}
+
+- (UIColor *)musicPickerTrimmerBackground {
+    return [UIColor colorWithRed:0x80/255.0 green:0x80/255.0 blue:0x80/255.0 alpha:1];
+}
+
+@end
 
 @interface LiteTableViewController () <MuseVideoDelegate>
 
@@ -43,6 +338,10 @@
 @property (weak, nonatomic) IBOutlet UILabel        *selectModeMinSecondsLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel        *selectModeMaxSecondsLabel;
+
+@property (weak, nonatomic) IBOutlet UISwitch       *customizeUISwitch;
+
+
 @property (nonatomic)                ZFModalTransitionAnimator *animator;
 @end
 
@@ -54,10 +353,11 @@
     self.watermarkPosition = MuseVideoWatermarkPositionNone;
 }
 
-- (IBAction)lanuch:(UIBarButtonItem *)sender {
+- (IBAction)launch:(UIBarButtonItem *)sender {
     [self.bitRateTextField resignFirstResponder];
     MuseVideoCameraConfig *config = [[MuseVideoCameraConfig alloc] init];
     config.watermarkImage = [UIImage imageNamed:@"watermark"];
+    config.watermarkSize = CGSizeMake(30, 30);
     NSMutableArray<id<MuseVideoCaptureMode>> *modes = [[NSMutableArray alloc] initWithCapacity:2];
     if (self.clickModeSwitch.isOn) {
         MuseVideoCaptureModeVideo *m = [[MuseVideoCaptureModeVideo alloc] init];
@@ -92,7 +392,20 @@
 //    UINavigationController *vc = [MuseVideo createCameraViewControllerWithConfig:config customization:nil delegate:self];
 //    [self presentViewController:vc animated:YES completion:nil];
 
-    UINavigationController *modalVC = [MuseVideo createCameraViewControllerWithConfig:config customization:nil delegate:self];
+    MuseVideoUICustomization *customization = nil;
+    if (self.customizeUISwitch.isOn) {
+        if (config.resolution == MuseVideoResolution720x1280 || config.resolution == MuseVideoResolution1080x1920) {
+            customization = [[MuseVideoUICustomization16x9 alloc] init];
+            customization.camera = [[CameraUICustomization16x9 alloc] init];
+        } else {
+            customization = [[MuseVideoUICustomization alloc] init];
+            customization.camera = [[CameraUICustomization alloc] init];
+        }
+        customization.editor = [[VideoEditorUICustomization alloc] init];
+        customization.musicPicker = [[VideoMusicPickerUICustomization alloc] init];
+    }
+
+    UINavigationController *modalVC = [MuseVideo createCaptureVideoViewControllerWithConfig:config customization:customization delegate:self];
     modalVC.modalPresentationStyle = UIModalPresentationFullScreen;
 
     self.animator = [[ZFModalTransitionAnimator alloc] initWithModalViewController:modalVC];
@@ -213,6 +526,18 @@
     [vc dismissViewControllerAnimated:YES completion:^{
         [self performSegueWithIdentifier:@"MediaInfoSegueIdentifier" sender:nil];
     }];
+}
+
+- (void)museVC:(UINavigationController *)vc captureImage:(UIImage *)image {
+    PhotoInfoViewController *vvc = [[PhotoInfoViewController alloc] init];
+    vvc.image = image;
+
+    // do whatever you want.
+    // 1. dismiss it and then push.
+    [vc dismissViewControllerAnimated:YES completion:^{
+        [self.navigationController pushViewController:vvc animated:YES];
+    }];
+    // 2. or just push. ```[vc pushViewController:vvc animated:YES];```
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

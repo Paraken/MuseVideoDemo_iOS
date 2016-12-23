@@ -52,19 +52,25 @@ MuseVideo.registerApp(withKey: "1234567890", appcode: "1234567890", secret: "123
 
 #### 拍摄功能使用
 ##### swift
-若只需按 SDK 默认设置，只需要如下两行代码进行拍摄
+若只需按 SDK 默认设置，只需要如下两行代码进行拍摄视频
 ``` swift
-let vc = MuseVideo.createCameraViewController(with: nil, customization: nil, delegate: self)
+let vc = MuseVideo.createCaptureVideoViewController(with: nil, customization: nil, delegate: self)
+present(vc!, animated: true, completion: nil)
+```
+
+若只需按 SDK 默认设置，只需要如下两行代码进行拍摄照片
+``` swift
+let vc = MuseVideo.createTakingPhotoViewController(with: nil, customization: nil, delegate: self)
 present(vc!, animated: true, completion: nil)
 ```
 
 若只需按 SDK 默认设置，只需要如下两行代码进行导入
 ``` swift
-let vc = MuseVideo.createImportViewController(with: nil, delegate: self)
+let vc = MuseVideo.createImportViewController(with: nil, customization: nil, delegate: self)
 present(vc!, animated: true, completion: nil)
 ```
 
-若需进行自定义配置，则可参考如下代码
+若需进行自定义拍摄视频配置，则可参考如下代码
 ``` swift
 let config = MuseVideoCameraConfig()
 var modes = [MuseVideoCaptureMode]()
@@ -89,27 +95,48 @@ config.modes = modes // 根据 app 需求进行配置
 config.enableEdit = true // 根据 app 需求进行配置
 config.enableMuteSwitch = false // 根据 app 需求进行配置
 // 添加你需要的其他配置
-let vc = MuseVideo.createCameraViewController(with: config, customization: nil, delegate: self)
+let vc = MuseVideo.createCaptureVideoViewController(with: config, customization: nil, delegate: self)
 present(vc!, animated: true, completion: nil)
+```
+ 
+若需进行自定义拍摄照片配置，则可参考如下代码
+``` swift
+let config = MuseVideoPhotoConfig()
+config.watermarkImage = UIImage(named: "watermark")
+config.watermarkSize = CGSize(width: 30, height: 30)
+config.watermarkPosition = .bottomLeft
+ 
+config.enableBeautifySwitch = false
+ 
+let vc = MuseVideo.createTakingPhotoViewController(with: config, customization: nil, delegate: self)
+present(vc, animated: true, completion: nil)
+
 ```
 
 ##### Objective-C
-若只需按 SDK 默认设置，只需要如下两行代码进行拍摄
+若只需按 SDK 默认设置，只需要如下两行代码进行拍摄视频
 ``` objective-c
-UINavigationController *vc = [MuseVideo createCameraViewControllerWithConfig:nil customization:nil delegate:self];
+UINavigationController *vc = [MuseVideo createCaptureVideoViewControllerWithConfig:nil customization:nil delegate:self];
+[self presentViewController:vc animated:YES completion:nil];
+```
+
+若只需按 SDK 默认设置，只需要如下两行代码进行拍摄照片
+``` objective-c
+UINavigationController *vc = [MuseVideo createTakingPhotoViewControllerWithConfig:nil customization:nil delegate:self];
 [self presentViewController:vc animated:YES completion:nil];
 ```
 
 若只需按 SDK 默认设置，只需要如下两行代码进行导入
 ``` objective-c
-UINavigationController *vc = [MuseVideo createImportViewControllerWithConfig:nil delegate:self];
+UINavigationController *vc = [MuseVideo createImportViewControllerWithConfig:nil customization:nil delegate:self];
 [self presentViewController:vc animated:YES completion:nil];
 ```
 
-若需进行自定义配置，则可参考如下代码
+若需进行自定义拍摄视频配置，则可参考如下代码
 ``` objective-c
 MuseVideoCameraConfig *config = [[MuseVideoCameraConfig alloc] init];
 config.watermarkImage = [UIImage imageNamed:@"watermark"];
+config.watermarkSize = CGSizeMake(30, 30);
 NSMutableArray<id<MuseVideoCaptureMode>> *modes = [[NSMutableArray alloc] initWithCapacity:2];
 
 // 根据 app 需求添加点击拍摄模式
@@ -132,6 +159,22 @@ config.modes = modes; // 根据 app 需求进行配置
 config.enableEdit = YES; // 根据 app 需求进行配置
 config.enableMuteSwitch = NO; // 根据 app 需求进行配置
 // 添加你需要的其他配置
-UINavigationController *vc = [MuseVideo createCameraViewControllerWithConfig:config customization:nil delegate:self];
+UINavigationController *vc = [MuseVideo createCaptureVideoViewControllerWithConfig:config customization:nil delegate:self];
 [self presentViewController:vc animated:YES completion:nil];
 ```
+ 
+若需进行自定义拍摄照片配置，则可参考如下代码
+``` objective-c
+MuseVideoPhotoConfig *config = [[MuseVideoPhotoConfig alloc] init];
+config.watermarkImage = [UIImage imageNamed:@"watermark"];
+config.watermarkSize = CGSizeMake(30, 30);
+config.watermarkPosition = MuseVideoWatermarkPositionBottomLeft; // 根据 app 需求进行配置
+config.enableBeautifySwitch = NO; // 根据 app 需求进行配置
+// 添加你需要的其他配置
+UINavigationController *vc = [MuseVideo createTakingPhotoViewControllerWithConfig:config customization:nil delegate:self];
+[self presentViewController:modalVC animated:YES completion:nil];
+```
+
+若需进行自定义界面颜色图标等，则可继承 MuseVideoUICustomization.h 中相应类重写你想要修改的界面颜色和图标，
+可参考 demo 中 CameraUICustomization, CameraUICustomization16x9, VideoEditorUICustomization, VideoMusicPickerUICustomization 类。
+若传入 customization 为 nil, 则使用 SDK 中自带红色主题，而 demo 中通过上述继承相应类修改颜色和图标实现蓝色主题

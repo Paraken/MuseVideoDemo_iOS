@@ -50,6 +50,7 @@ typedef NS_ENUM(NSInteger, MuseVideoResolution) {
 @protocol MuseVideoDelegate <NSObject>
 - (void)museVCDidCancel:(UINavigationController *)vc;
 - (void)museVC:(UINavigationController *)vc captureVideo:(NSURL *)videoPathURL withThumbnail:(UIImage *)thumbnail;
+- (void)museVC:(UINavigationController *)vc captureImage:(UIImage *)image;
 @end
 
 

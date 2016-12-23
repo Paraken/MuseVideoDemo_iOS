@@ -31,6 +31,7 @@
     for (AVAssetTrack *track in asset.tracks) {
         if ([track.mediaType isEqualToString:AVMediaTypeVideo]) {
             self.resolutionLabel.text = [NSString stringWithFormat:@"%ldx%ld", (long)track.naturalSize.width, (long)track.naturalSize.height];
+            NSLog(@"bitrate:%f", track.estimatedDataRate);
             break;
         }
     }
@@ -38,7 +39,14 @@
     NSNumber *filesize = [attributes valueForKey:NSFileSize];
     self.sizeLabel.text = [NSString stringWithFormat:@"%.2fM", filesize.doubleValue/1024/1024];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(toggleSave:)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(toggleSave:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(presentActivity:)];
+}
+
+- (void)presentActivity:(UIBarButtonItem *)sender {
+//    AVAsset *asset = [AVAsset assetWithURL:self.url];
+    UIActivityViewController *activity = [[UIActivityViewController alloc] initWithActivityItems:@[self.url] applicationActivities:nil];
+    [self presentViewController:activity animated:YES completion:nil];
 }
 
 - (void)toggleSave:(UIBarButtonItem *)sender {

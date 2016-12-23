@@ -20,6 +20,8 @@
 		8111DA881DD466B50013F9EF /* Textures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8111DA861DD466B50013F9EF /* Textures.bundle */; };
 		8111DA8B1DD466C40013F9EF /* MuseVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8111DA8A1DD466C40013F9EF /* MuseVideo.framework */; };
 		8111DA8D1DD466CA0013F9EF /* MuseVideo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8111DA8A1DD466C40013F9EF /* MuseVideo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81B190B71E0D1DE1006AAA1F /* PhotoInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B190B41E0D1DE1006AAA1F /* PhotoInfoViewController.m */; };
+		81B190B81E0D1DE1006AAA1F /* TakePhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B190B61E0D1DE1006AAA1F /* TakePhotoTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +58,10 @@
 		8111DA851DD466B50013F9EF /* Music.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Music.bundle; sourceTree = SOURCE_ROOT; };
 		8111DA861DD466B50013F9EF /* Textures.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Textures.bundle; sourceTree = SOURCE_ROOT; };
 		8111DA8A1DD466C40013F9EF /* MuseVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MuseVideo.framework; sourceTree = "<group>"; };
+		81B190B31E0D1DE1006AAA1F /* PhotoInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoInfoViewController.h; sourceTree = "<group>"; };
+		81B190B41E0D1DE1006AAA1F /* PhotoInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoInfoViewController.m; sourceTree = "<group>"; };
+		81B190B51E0D1DE1006AAA1F /* TakePhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoTableViewController.h; sourceTree = "<group>"; };
+		81B190B61E0D1DE1006AAA1F /* TakePhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 		8111DA771DD4669D0013F9EF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				81B190B31E0D1DE1006AAA1F /* PhotoInfoViewController.h */,
+				81B190B41E0D1DE1006AAA1F /* PhotoInfoViewController.m */,
+				81B190B51E0D1DE1006AAA1F /* TakePhotoTableViewController.h */,
+				81B190B61E0D1DE1006AAA1F /* TakePhotoTableViewController.m */,
 				8111DA781DD4669D0013F9EF /* ImportTableViewController.h */,
 				8111DA791DD4669D0013F9EF /* ImportTableViewController.m */,
 				8111DA7A1DD4669D0013F9EF /* LiteTableViewController.h */,
@@ -170,7 +180,7 @@
 		8111DA551DD466110013F9EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Paraken;
 				TargetAttributes = {
 					8111DA5C1DD466110013F9EF = {
@@ -219,10 +229,12 @@
 			files = (
 				8111DA801DD4669D0013F9EF /* ImportTableViewController.m in Sources */,
 				8111DA821DD4669D0013F9EF /* MediaInfoTableViewController.m in Sources */,
+				81B190B71E0D1DE1006AAA1F /* PhotoInfoViewController.m in Sources */,
 				8111DA811DD4669D0013F9EF /* LiteTableViewController.m in Sources */,
 				8111DA651DD466110013F9EF /* AppDelegate.m in Sources */,
 				8111DA621DD466110013F9EF /* main.m in Sources */,
 				8111DA831DD4669D0013F9EF /* ZFModalTransitionAnimator.m in Sources */,
+				81B190B81E0D1DE1006AAA1F /* TakePhotoTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +278,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -314,6 +327,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
