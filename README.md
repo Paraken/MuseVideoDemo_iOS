@@ -16,8 +16,7 @@ MuseVideo iOS
 2. 手动导入 MuseVideo.framework, Textures.bundle, Music.bundle
 
 #### 获取授权
-使用我司 MuseSDK 需要授权。不申请授权使用SDK时仅限评估用途。请发邮件到 <feedback@paraken.com> 询问商务合作相关信息。
-
+使用我司 MuseSDK 需要授权。不申请授权使用SDK时仅限评估用途。请发邮件到 <feedback@paraken.com> 询问商务合作相关信息。如果只是测试，可直接使用 <https://github.com/Paraken/MuseVideoDemo_iOS/blob/master/MuseDemoOC/AppDelegate.m#L20> 中所填 key。
 ####  Xcode 8 开发适配
 SDK 最低支持 iOS8，拍摄功能需要在你的 info.plist 文件分别添加如下的 key，然后添加一个描述
 - 📷 ```NSCameraUsageDescription```
